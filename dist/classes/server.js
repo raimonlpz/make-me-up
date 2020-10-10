@@ -8,9 +8,9 @@ class Server {
     //public port: number = 3000;
     constructor() {
         //leer localhost de variables y puertp
-        this.host = process.env.host || '0.0.0.0';
+        this.host = process.env.HOST || '0.0.0.0';
         // port = process.env.PORT || 3000;
-        this.port = process.env.port || 3000;
+        this.port = process.env.PORT || 3000;
         this.app = express_1.default();
     }
     start(callback) {
