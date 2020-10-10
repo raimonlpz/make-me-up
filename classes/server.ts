@@ -1,4 +1,5 @@
 import express from 'express';
+require('dotenv').config({path: './variables.env'});
 
 export default class Server {
     public app : express.Application;
